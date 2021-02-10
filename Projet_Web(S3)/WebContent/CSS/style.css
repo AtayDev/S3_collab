@@ -1,0 +1,219 @@
+html, body, div{
+	padding:0;
+}
+
+body{
+	margin: 0;
+	color:#999999;
+}
+/*-----------Greeting et Voila------------------------------*/
+.greeting{
+	width:100%;
+	height:300px;
+	background-color: #f4f9f9;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	color:black;
+	
+}
+.Voila{
+	width:100%;
+	height:150px;
+	background-color: #fbf8f6;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	background-color:white;
+	color:black;
+}
+
+/*---------------------Header and it's Contents-------------------*/
+.header{
+	width:auto;
+	background: #393e46;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	position: -webkit-sticky;
+  	top:0;
+  	z-index: 4;
+}
+li,a{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+.logo{
+	max-height: 80px;
+	max-width: 80px;
+	padding: 10px;
+}
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display: inline-block;
+	padding: 10px 10px;
+}
+.nav_links li a{
+	transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+	color:#0088a9;
+}
+/*-------------Espaces---------------------*/
+.espaces{
+	display:flex;
+	height:350px;
+	text-align:center;
+	padding-top:30px 0;
+}
+.espace-association{
+	background-color: #ccf2f4;
+	width:50%;
+	
+}
+.espace-association-image{
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+	margin-left:30px;
+	margin-top: -50px;
+}
+.espace-donateur{
+	background-color: #ccf2f4;
+	width:50%;
+}
+.espace-donateur-image{
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+	margin-left:30px;
+	margin-top: -50px;
+}
+/*-----------Pourquoi--------------------------*/
+.pourquoi{
+	text-align: center;
+	background-color: #fbf8f6;
+	height:300px;
+	width:auto;
+	color: black;
+	padding-top:100px;
+}
+hr{
+	width:50%;
+	text-align: center;
+}
+p{
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:50px;
+}
+/*--------------------Footer-------------------------------*/
+.footer{
+	width:auto;
+	background: #c7cfb7;
+	height:200px;
+}
+/*------------------Card Section-----------------------------*/
+img {
+  height: auto;
+  max-width: auto;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid @gray-light;
+  //border-radius: 1rem;
+  color: @gray-dark;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  width: 600px;
+}
+
+.card {
+  
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+ 
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+	  display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+.card__title {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  color:black;
+}
+/*---------------------------------------------------------------*/
