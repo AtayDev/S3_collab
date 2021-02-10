@@ -4,13 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style_sans_slider.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style.css">
 <meta charset="UTF-8">
 <title>Mes Demandes</title>
 </head>
 <body>
-	<div class="container" >
-		<div class="header">
+	
+		<div class="header-consult-demandes">
 			<img class="logo" src="images/logoHero.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
@@ -18,10 +18,10 @@
 					<li><a href="hey.consult_demande_ass">Consulter Mes Demandes</a></li>
 				</ul>
 			</nav>
-			<a class="contact" href="#"><button>Sign Out</button></a>
+			<a class="contact-link" href="#"><button>Sign Out</button></a>
 		</div>
 
-		<div class="content" > 
+		<div class="content-consult-demandes" > 
 			<table class="table-demandes">
 					<tr>
 						
@@ -56,7 +56,7 @@
 		
 		</div>
 		
-		<div class="footer">Footer</div>
+		<div class="footer-consult-demandes">Footer</div>
 	</div>	
 
 </body>

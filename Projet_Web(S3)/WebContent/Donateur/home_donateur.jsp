@@ -1,27 +1,58 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+ 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Accueil Association</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style_sans_slider.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style.css">
 </head>
 <body>
-	<div class="container">
+	
 		<div class="header">
 			<img class="logo" src="images/logoHero.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
-					<li><a href="#">Consulter Mes Dons</a></li>
-					<li><a href="#">Mon Profile</a></li>
+					<li><a href="#">Consulter mes dons</a></li>
+					<li><a href="#">Mon profile</a></li>
 				</ul>
 			</nav>
 			<a class="contact" href="#"><button>Sign Out</button></a>
 		</div>
-
+		<div class="Voila"><h1>Voila quelques projets que vous pouvez soutenir!</h1></div>
+		
 		<div class="content"> <p>Vous êtes ${ sessionScope.dona_fname } ${ sessionScope.dona_id } !</p></div>
-		<div class="footer">Footer</div>
+			
+			<ul class="cards">
+			<c:forEach items="${demandesList}" var="d">
+				<li class="cards__item">
+				    <div class="card">
+				      <img class="card__image card__image--fence" src="${d.filename}">
+				      <div class="card__content">
+				        <div class="card__title">Statut:${d.dem_statut}</div>
+				        <div class="card__title" >Type: ${d.dem_type}</div>
+				        <c:set var = "salary" scope = "session" value = "${d.dem_type}"/>
+				        <div class="card__title">Ville:${d.dem_ville}</div>
+				        <div class="card__title">Montant:${d.montant_but} </div>
+				        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+				        
+				          
+				        <button class="btn btn--block card__btn"><a href="hey.participer_servlet">Button Text</a></button>
+				      	 
+				      </div>
+				    </div>
+	  			</li>	  
+			
+			
+			</c:forEach>
+			</ul>
+		
+		
+		
+		<%@ include file="../Home/Footer.jsp" %> 
+		
 	</div>	
 </body>
 </html>

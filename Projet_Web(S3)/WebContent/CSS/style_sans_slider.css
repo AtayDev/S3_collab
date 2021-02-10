@@ -102,11 +102,16 @@ button :hover{
     padding: 20px;
     margin: 8% auto 0;
     text-align:center;
+    height:700px;
+}
+.sign-up-form p{
+	margin-top:0;
 }
 .sign-up-form h1{
 	color:black;
 	margin-bottom:30px;
 }
+
 .input-box{
 	border-radius:20px;
 	padding:10px;
@@ -200,7 +205,6 @@ button :hover{
 }
 .table-demandes td{
 	padding:12px 15px;
-	
 	
 }
 
