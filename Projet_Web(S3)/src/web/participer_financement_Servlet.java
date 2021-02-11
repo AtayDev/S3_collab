@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "participer_servlet", urlPatterns = {"*.participer_servlet"})
-public class participer_Servlet extends HttpServlet{
+@WebServlet(name = "participer_financement_servlet", urlPatterns = {"*.participer_financement_servlet"})
+public class participer_financement_Servlet extends HttpServlet{
 
 	@Override
 	public void init() throws ServletException {
@@ -18,11 +18,10 @@ public class participer_Servlet extends HttpServlet{
 	}
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("./Participation/participation_form.jsp").forward(request, response);
+		request.getRequestDispatcher("./Participation/participation_financement_form.jsp").forward(request, response);
 	}
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doPost(req, resp);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 	}
 }

@@ -31,6 +31,7 @@
 				    <div class="card">
 				      <img class="card__image card__image--fence" src="${d.filename}">
 				      <div class="card__content">
+				       <div class="card__title">Reference:${d.dem_id}</div>
 				        <div class="card__title">Statut:${d.dem_statut}</div>
 				        <div class="card__title" >Type: ${d.dem_type}</div>
 				        <c:set var = "salary" scope = "session" value = "${d.dem_type}"/>
@@ -38,8 +39,15 @@
 				        <div class="card__title">Montant:${d.montant_but} </div>
 				        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
 				        
-				          
-				        <button class="btn btn--block card__btn"><a href="hey.participer_servlet">Button Text</a></button>
+				         <c:choose>
+							 <c:when test="${d.dem_type=='Financement'}">
+							    <button class="btn btn--block card__btn"><a href="hey.participer_financement_servlet">Participer</a></button>
+							 </c:when>
+							 <c:when test="${d.dem_type=='Benevolat'}">
+							     <button class="btn btn--block card__btn"><a href="hey.participer_benevolat_servlet">Participer</a></button>
+							 </c:when>
+						</c:choose> 
+				        
 				      	 
 				      </div>
 				    </div>

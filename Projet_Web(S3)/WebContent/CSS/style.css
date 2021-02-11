@@ -128,9 +128,9 @@ img {
 }
 
 .btn {
-  background-color: white;
+  background-color:rgba(0,136,169,1);
   border: 1px solid @gray-light;
-  //border-radius: 1rem;
+  border-radius: 1rem;
   color: @gray-dark;
   padding: 0.5rem;
   text-transform: lowercase;

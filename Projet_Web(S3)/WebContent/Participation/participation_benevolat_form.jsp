@@ -21,18 +21,19 @@
 			</nav>
 			<a class="contact" href="#"><button>Sign Out</button></a>
 		</div>
-		<div class="Voila"><h1>Toutes les contributions sont importantes, meme les petites parmi eux!</h1></div>
 		
-		<div class="login-form">
-				<form  action="Yes.participation_servlet" method="post">
-						
-						<input type="text" name="reference" class="input-box" placeholder="Reference du Demande ">
-						<input type="text" name="montant" class="input-box" placeholder="Montant">
-						<button type="submit" class="login-btn">Sign In</button>
-				</form>
-				
+		<div class="content">
+			<div class="sign-up-form">
+					<form  action="Yes.participer_benevolat_servlet" method="post">
+							<h1>Formulaire de Benevolat</h1>
+							<input type="text" name="reference" class="input-box" placeholder="Reference du Demande ">
+							<input type="text" name="benevolat" class="input-box" placeholder="Benevolat">
+							<input type="text" name="rating" class="input-box" placeholder="Rating">
+							<button type="submit" class="creer-compte">Confirmer</button>
+					</form>	
+			</div>
 		</div>
-		<h1>Heeyyy</h1>
+	
 		<%@ include file="../Home/Footer.jsp" %> 
 </body>
 </html>

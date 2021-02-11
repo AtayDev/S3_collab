@@ -152,6 +152,39 @@ public class DemandeImpl implements IDemande {
         return demandes;
 	}
 
-	
+	 @Override
+	    public boolean editDemandeF(Demande demande) {
+		 Connection connection= SingletonConnection.getConnection();   
+		 String editQuery = "UPDATE demande SET montant_vrai=?, rating=?;";
+	        try {
+	          
+	            PreparedStatement preparedStatement = connection.prepareStatement(editQuery);
+	            preparedStatement.setDouble(1, demande.getMontant_vrai());
+	            preparedStatement.setInt(2, demande.getRating());
+	            
+	            preparedStatement.execute();
+	            return true;
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	        return false;
+	    }
+	 @Override
+	    public boolean editDemandeB(Demande demande) {
+		 Connection connection= SingletonConnection.getConnection();   
+		 String editQuery = "UPDATE demande SET nbBenevoles_vrai=?, rating=?;";
+	        try {
+	          
+	            PreparedStatement preparedStatement = connection.prepareStatement(editQuery);
+	            preparedStatement.setInt(1, demande.getNbBenevoles_vrai());
+	            preparedStatement.setInt(2, demande.getRating());
+	            
+	            preparedStatement.execute();
+	            return true;
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	        return false;
+	    }
 
 }

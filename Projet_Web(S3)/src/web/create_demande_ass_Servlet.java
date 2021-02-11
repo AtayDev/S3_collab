@@ -92,8 +92,9 @@ public class create_demande_ass_Servlet extends HttpServlet{
 		
 		//Demande demande=new Demande();
 		
+		//le id du demandeur provient du Session
 		///////////////////////////////////////////////////////////////////
-		 demande=demDao.insertDemande(new Demande(demandeur_id,titre,ville,description,dateDebut,dateFin,dbFileName,savePath,Statut,Type,adresseBenevolat, montantBut,nbBenevolesBut,heureDebut,heureFin,adresseBenevolat));
+		demande=demDao.insertDemande(new Demande(demandeur_id,titre,ville,description,dateDebut,dateFin,dbFileName,savePath,Statut,Type,adresseBenevolat, montantBut,nbBenevolesBut,heureDebut,heureFin,adresseBenevolat));
 		
 		request.setAttribute("demande", demande);
 		session.setAttribute("demande", demande);

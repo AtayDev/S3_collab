@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +22,13 @@
 		</div>
 
 		<div class="content"> <p>Vous êtes ${ sessionScope.ass_name } ${ sessionScope.ass_id } !</p></div>
+		<c:set var="age" value="26"/>
+		<c:if test="${age >= 18}">
+		 <c:out value="You are eligible for voting!"/>
+		</c:if>
+		<c:if test="${age < 18}">
+		 <c:out value="You are not eligible for voting!"/>
+		</c:if>
 		<div class="footer">Footer</div>
 	</div>	
 </body>
