@@ -153,34 +153,42 @@ public class DemandeImpl implements IDemande {
 	}
 
 	 @Override
-	    public boolean editDemandeF(Demande demande) {
+	    public boolean updateDemandeF(Demande demande) {
+		 boolean rowUpdated;
 		 Connection connection= SingletonConnection.getConnection();   
-		 String editQuery = "UPDATE demande SET montant_vrai=?, rating=?;";
+		 String editQuery = "UPDATE demande SET montant_vrai=montant_vrai+?, rating=rating+? WHERE dem_id=?";
 	        try {
 	          
 	            PreparedStatement preparedStatement = connection.prepareStatement(editQuery);
+	           
 	            preparedStatement.setDouble(1, demande.getMontant_vrai());
 	            preparedStatement.setInt(2, demande.getRating());
+	            preparedStatement.setInt(3, demande.getDem_id());
 	            
-	            preparedStatement.execute();
-	            return true;
+	            preparedStatement.executeUpdate();
+	            rowUpdated=preparedStatement.executeUpdate()>0;
+	            return rowUpdated ;
 	        } catch (SQLException e) {
 	            e.printStackTrace();
 	        }
 	        return false;
 	    }
 	 @Override
-	    public boolean editDemandeB(Demande demande) {
+	    public boolean updateDemandeB(Demande demande) {
+		 boolean rowUpdatedd;
 		 Connection connection= SingletonConnection.getConnection();   
-		 String editQuery = "UPDATE demande SET nbBenevoles_vrai=?, rating=?;";
+		 String editQuery = "UPDATE demande SET nbBenevoles_vrai=?, rating=? WHERE dem_id=?";
 	        try {
 	          
 	            PreparedStatement preparedStatement = connection.prepareStatement(editQuery);
+	          
 	            preparedStatement.setInt(1, demande.getNbBenevoles_vrai());
 	            preparedStatement.setInt(2, demande.getRating());
+	            preparedStatement.setInt(3, demande.getDem_id());
 	            
-	            preparedStatement.execute();
-	            return true;
+	            preparedStatement.executeUpdate();
+	            rowUpdatedd=preparedStatement.executeUpdate()>0;
+	            return rowUpdatedd ;
 	        } catch (SQLException e) {
 	            e.printStackTrace();
 	        }

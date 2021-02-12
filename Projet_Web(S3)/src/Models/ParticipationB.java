@@ -5,6 +5,12 @@ public class ParticipationB {
 	private int id_part_donateur;
 	private int id_part_demande;
 	private int benevole_part;
+	
+	public ParticipationB(int donateur_id, int reference, int benevolat) {
+		id_part_donateur=donateur_id;
+		id_part_demande=reference;
+		benevole_part=benevolat;
+	}
 	public int getId_partB() {
 		return id_partB;
 	}
@@ -28,6 +34,10 @@ public class ParticipationB {
 	}
 	public void setBenevole_part(int benevole_part) {
 		this.benevole_part = benevole_part;
+	}
+	public ParticipationB() {
+		super();
+		
 	}
 	
 }

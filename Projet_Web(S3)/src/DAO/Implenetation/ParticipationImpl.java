@@ -49,10 +49,10 @@ public class ParticipationImpl implements IParticipation {
 		Connection connection= SingletonConnection.getConnection();
 		try{
 	        
-	    	 PreparedStatement ps= connection.prepareStatement("INSERT INTO ParticipationB(id_part_donateur,id_part_demande,montant_part,benevole_part) values (?,?,?,?)");
+	    	 PreparedStatement ps= connection.prepareStatement("INSERT INTO ParticipationB(id_part_donateur,id_part_demande,benevole_part) values (?,?,?)");
 	         ps.setInt(1,partb.getId_part_donateur());
 	         ps.setInt(2,partb.getId_part_demande());
-	         ps.setInt(4,partb.getBenevole_part());
+	         ps.setInt(3,partb.getBenevole_part());
 	         
 	        
 	        

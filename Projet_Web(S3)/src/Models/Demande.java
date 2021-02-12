@@ -24,6 +24,7 @@ public class Demande {
 	private String filename;
 	private String path;
 	
+	private int x;
 	
 	public Demande() {
 		super();
@@ -60,6 +61,22 @@ public class Demande {
 	
 
 	
+
+
+
+	public Demande(double montant, int rating2, int reference) {
+		montant_vrai=montant;
+		rating=rating2;
+		dem_id=reference;
+		
+	}
+
+	public Demande(int benevolat, int rating2, int reference,int x) {
+		nbBenevoles_vrai=benevolat;
+		rating=rating2;
+		dem_id=reference;
+		this.x=x;
+	}
 
 
 

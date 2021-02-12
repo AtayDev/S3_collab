@@ -6,6 +6,12 @@ public class ParticipationF {
 	private int id_part_demande;
 	private double montant_part;
 	
+
+	public ParticipationF(int donateur_id, int reference, double montant) {
+		id_part_donateur=donateur_id;
+		id_part_demande=reference;
+		montant_part=montant;
+	}
 	public int getId_partF() {
 		return id_partF;
 	}
@@ -29,6 +35,10 @@ public class ParticipationF {
 	}
 	public void setMontant_part(double montant_part) {
 		this.montant_part = montant_part;
+	}
+	public ParticipationF() {
+		super();
+	
 	}
 	
 }
