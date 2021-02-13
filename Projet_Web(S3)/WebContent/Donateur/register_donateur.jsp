@@ -25,7 +25,7 @@
 				<input type="text" name="ville" class="input-box" placeholder="Ville"><br>
 				<button type="submit" class="signup-btn">Créer</button>
 				<hr>
-				<p>Vous avez deja un compte?</p>
+				<p style="color:#393e46;">Vous avez deja un compte?</p>
 				<a href="hey.auth_dona" class="se-connecter">Se connecter</a>
 							
 			</form> 

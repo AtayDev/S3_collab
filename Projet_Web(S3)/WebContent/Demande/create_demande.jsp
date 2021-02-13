@@ -6,26 +6,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up Association</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style_sans_slider.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style.css">
 </head>
 <body>
 
- <div class="container">
+
 	 <div class="header">
-		<img class="logo" src="images/logoHero.png" alt="logo">
+		<img class="logo" src="https://ihelp.group/wp-content/uploads/2020/06/ihelp-icon-.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
-					<li><a href="">Créer Une Demande</a></li>
-					<li><a href="hey.create_demande_ass">Consulter Mes Demandes</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="hey.create_demande_ass">Créer Une Demande</a></li>
+					<li><a href="hey.consult_demande_ass">Consulter Mes Demandes</a></li>
+					
 				</ul>
 			</nav>
-			<a class="contact" href="#"><button>Contact</button></a>
+			<a class="contact-link" href="Yes.login_ass">Sign out</a>
 	</div>
 	
  
 	<div class="content" >
-		<div class="demande-form">	
+		<div class="sign-up-form">	
 			<form  action="Yes.create_demande_ass" method="post" enctype="multipart/form-data">
 			    <h1>Demandez de l'aide dans vos projets</h1>
 				<input type="text" name="titre" class="input-box" placeholder="Titre de votre projet"><br>
@@ -50,6 +50,6 @@
 	</div>
 		
 	<div class="footer">Footer</div>
-</div>
+
 </body>
 </html>

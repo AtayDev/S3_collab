@@ -6,19 +6,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Accueil Association</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style_sans_slider.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style.css">
 </head>
 <body>
-	<div class="container">
+	
 		<div class="header">
-			<img class="logo" src="images/logoHero.png" alt="logo">
+			<img class="logo" src="https://ihelp.group/wp-content/uploads/2020/06/ihelp-icon-.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
 					<li><a href="hey.create_demande_ass">Créer Une Demande</a></li>
 					<li><a href="hey.consult_demande_ass">Consulter Mes Demandes</a></li>
 				</ul>
 			</nav>
-			<a class="contact" href="#"><button>Sign Out</button></a>
+			<a class="contact-link" href="Yes.login_ass">Sign Out</a>
 		</div>
 
 		<div class="content"> <p>Vous êtes ${ sessionScope.ass_name } ${ sessionScope.ass_id } !</p></div>
@@ -30,6 +30,6 @@
 		 <c:out value="You are not eligible for voting!"/>
 		</c:if>
 		<div class="footer">Footer</div>
-	</div>	
+		
 </body>
 </html>

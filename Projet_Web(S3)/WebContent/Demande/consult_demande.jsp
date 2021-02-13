@@ -10,54 +10,52 @@
 </head>
 <body>
 	
-		<div class="header-consult-demandes">
-			<img class="logo" src="images/logoHero.png" alt="logo">
+		<div class="header">
+			<img class="logo" src="https://ihelp.group/wp-content/uploads/2020/06/ihelp-icon-.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
 					<li><a href="hey.create_demande_ass">Créer Une Demande</a></li>
 					<li><a href="hey.consult_demande_ass">Consulter Mes Demandes</a></li>
 				</ul>
 			</nav>
-			<a class="contact-link" href="#"><button>Sign Out</button></a>
+			<a class="contact-link" href="Yes.login_ass">Sign out</a>
 		</div>
 
-		<div class="content-consult-demandes" > 
-			<table class="table-demandes">
-					<tr>
-						
-						<th>ID<th>Titre<th>Ville<th>Description<th>Date Debut<th>Date Fin<th>Statut<th>Type<th>Montant Visé<th>Montant Accumulé<th>nbBenevoles Visé<th>nbBenevoles Accumulé<th>Heure Debut<th>Heure Fin<th>Adresse Benevolat<th>Rating<th>Image<th>
-						
-					</tr>
+		<div class="content" > 
+			
+					
 			<c:forEach items="${demandesList}" var="d">
 					
-					<tr>
-						<td>${d.dem_id}</td>
-						<td>${d.dem_titre}</td>
-						<td>${d.dem_ville}</td>
-						<td>${d.dem_description}</td>
-						<td>${d.date_debut}</td>
-						<td>${d.date_fin}</td>
-						<td>${d.dem_statut}</td>
-						<td>${d.dem_type}</td>
-						<td>${d.montant_but}</td>
-						<td>${d.montant_vrai}</td>
-						<td>${d.nbBenevoles_but}</td>
-						<td>${d.nbBenevoles_vrai}</td>
-						<td>${d.heure_debut}</td>
-						<td>${d.heure_fin}</td>
-						<td>${d.adresse_benevolat}</td>
-						<td>${d.rating}</td>
-						<td><img src="${d.filename}" width="200" height="200"></td>
+					 	<div class="about-card" style="text-align:left;width:80%;height:auto;">
+						<h1>Demande numero ${d.dem_id}<img alt="logo" src="${d.filename}" style="width:50%;float:right;"></h1>
 						
-					</tr>
+						<p style="font-size:20px;">ID:${d.dem_id}</p>
+						<p style="font-size:20px;" >Titre:${d.dem_titre}</p>
+						<p style="font-size:20px;">${d.dem_ville}</p>
+						<p style="font-size:20px;">${d.dem_description}</p>
+						<p style="font-size:20px;">${d.date_debut}</p>
+						<p style="font-size:20px;">${d.date_fin}</p>
+						<p style="font-size:20px;">${d.dem_statut}</p>
+						<p style="font-size:20px;">${d.dem_type}</p>
+						<p style="font-size:20px;">${d.montant_but}</p>
+						<p style="font-size:20px;">${d.montant_vrai}</p>
+						<p style="font-size:20px;">${d.nbBenevoles_but}</p>
+						<p style="font-size:20px;">${d.nbBenevoles_vrai}</p>
+						<p style="font-size:20px;">${d.heure_debut}</p>
+						<p style="font-size:20px;">${d.heure_fin}</p>
+						<p style="font-size:20px;">${d.adresse_benevolat}</p>
+						<p style="font-size:20px;">${d.rating}</p>
+					
+					
+				</div>
+					
 					
 				</c:forEach>
-			</table>
-		
+			
 		</div>
 		
 		<div class="footer-consult-demandes">Footer</div>
-	</div>	
+	
 
 </body>
 </html>

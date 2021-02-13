@@ -5,7 +5,7 @@
 <div class="pourquoi">
 	<h1>Pourquoi nous avons créé cette application?</h1>
 	<hr>
-	<p>We believe that it's very impotant that we can help as much people as we can
+	<p style="margin-left:25px; margin-right: 25px;">We believe that it's very impotant that we can help as much people as we can
 	We believe that it's very impotant that we can help as much people as we canWe believe that it's very impotant that we can help as much people as we can
 	We believe that it's very impotant that we can help as much people as we can
 	</p>

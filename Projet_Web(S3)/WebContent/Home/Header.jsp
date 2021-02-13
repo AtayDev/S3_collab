@@ -2,13 +2,16 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <link rel="stylesheet" href="./CSS/style.css">
-<div class="header">
-			<img class="logo" src="images/logoHero.png" alt="logo">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<div class="header" style="font-family: font-family: 'Quicksand', sans-serif;">
+			<a href="*.home_servlet">
+			<img class="logo" src="https://ihelp.group/wp-content/uploads/2020/06/ihelp-icon-.png" alt="logo">
+			</a>
 			<nav>
 				<ul class="nav_links">
 					<li><a href="hey.register_dona">Espace Donateur</a></li>
 					<li><a href="hey.sign_up_ass">Espace Association</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="${pageContext.request.contextPath}/Home/About.jsp">About</a></li>
 				</ul>
 			</nav>
 			<a  href="${pageContext.request.contextPath}/Home/contactUs.jsp"><button class="contact-link">Contact</button></a>

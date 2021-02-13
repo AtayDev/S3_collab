@@ -12,19 +12,19 @@
 <body>
 	
 		<div class="header">
-			<img class="logo" src="images/logoHero.png" alt="logo">
+			<img class="logo" src="https://ihelp.group/wp-content/uploads/2020/06/ihelp-icon-.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
 					<li><a href="#">Consulter mes dons</a></li>
 					<li><a href="#">Mon profile</a></li>
 				</ul>
 			</nav>
-			<a class="contact" href="#"><button>Sign Out</button></a>
+			<a class="contact-link" href="Yes.auth_dona">Sign Out</a>
 		</div>
-		<div class="Voila"><h1>Voila quelques projets que vous pouvez soutenir!</h1></div>
+		
 		
 		<div class="content"> <p>Vous êtes ${ sessionScope.dona_fname } ${ sessionScope.dona_id } !</p></div>
-			
+			<div class="Voila"><h1>Voila quelques projets que vous pouvez soutenir!</h1></div>
 			<ul class="cards">
 			<c:forEach items="${demandesList}" var="d">
 				<li class="cards__item">
@@ -61,6 +61,6 @@
 		
 		<%@ include file="../Home/Footer.jsp" %> 
 		
-	</div>	
+	
 </body>
 </html>

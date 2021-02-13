@@ -29,7 +29,7 @@
 					<input type="text" name="rib" class="input-box" placeholder="Rib"><br>
 					<button type="submit" class="creer-compte">Créer</button>
 					<hr>
-					<p>Vous avez deja un compte?</p>
+					<p style="color:#393e46;">Vous avez deja un compte?</p>
 					<a href="hey.login_ass" class="se-connecter">Se connecter</a>
 								
 				</form> 
