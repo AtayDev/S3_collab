@@ -15,7 +15,8 @@
 			<img class="logo" src="https://ihelp.group/wp-content/uploads/2020/06/ihelp-icon-.png" alt="logo">
 			<nav>
 				<ul class="nav_links">
-					<li><a href="#">Consulter mes dons</a></li>
+					<li><a href="hey.consult_part_financement">Mes Financements</a></li>
+					<li><a href="hey.consult_part_benevolat">Mes Benevolats</a></li>
 					<li><a href="#">Mon profile</a></li>
 				</ul>
 			</nav>

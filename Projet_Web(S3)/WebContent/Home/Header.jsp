@@ -11,8 +11,8 @@
 				<ul class="nav_links">
 					<li><a href="hey.register_dona">Espace Donateur</a></li>
 					<li><a href="hey.sign_up_ass">Espace Association</a></li>
-					<li><a href="${pageContext.request.contextPath}/Home/About.jsp">About</a></li>
+					<li><a href="hey.about_servlet">About</a></li>
 				</ul>
 			</nav>
-			<a  href="${pageContext.request.contextPath}/Home/contactUs.jsp"><button class="contact-link">Contact</button></a>
+			<a  href="hey.contact_servlet"><button class="contact-link">Contact</button></a>
 </div>

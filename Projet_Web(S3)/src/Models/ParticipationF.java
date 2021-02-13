@@ -1,7 +1,7 @@
 package Models;
 
 public class ParticipationF {
-	private int id_partF;
+	private int id_part_f;
 	private int id_part_donateur;
 	private int id_part_demande;
 	private double montant_part;
@@ -12,12 +12,7 @@ public class ParticipationF {
 		id_part_demande=reference;
 		montant_part=montant;
 	}
-	public int getId_partF() {
-		return id_partF;
-	}
-	public void setId_partF(int id_partF) {
-		this.id_partF = id_partF;
-	}
+	
 	public int getId_part_donateur() {
 		return id_part_donateur;
 	}
@@ -39,6 +34,14 @@ public class ParticipationF {
 	public ParticipationF() {
 		super();
 	
+	}
+
+	public int getId_part_f() {
+		return id_part_f;
+	}
+
+	public void setId_part_f(int id_part_f) {
+		this.id_part_f = id_part_f;
 	}
 	
 }

@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/style.css">
 </head>
 <body>
-	<div class="container">
+	
 		<%@ include file="../Home/Header.jsp" %> 
 		
 		<div class="content">
@@ -21,7 +21,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="footer">Footer</div>
-	</div>	
+		<%@ include file="../Home/Footer.jsp" %> 
+	
 </body>
 </html>
