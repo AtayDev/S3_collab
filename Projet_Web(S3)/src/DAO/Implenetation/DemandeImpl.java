@@ -177,7 +177,7 @@ public class DemandeImpl implements IDemande {
 	    public boolean updateDemandeB(Demande demande) {
 		 boolean rowUpdatedd;
 		 Connection connection= SingletonConnection.getConnection();   
-		 String editQuery = "UPDATE demande SET nbBenevoles_vrai=?, rating=? WHERE dem_id=?";
+		 String editQuery = "UPDATE demande SET nbBenevoles_vrai=nbBenevoles_vrai+?, rating=rating+? WHERE dem_id=?";
 	        try {
 	          
 	            PreparedStatement preparedStatement = connection.prepareStatement(editQuery);

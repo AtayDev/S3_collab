@@ -1,6 +1,7 @@
 package web;
 
 import java.io.IOException;
+import java.util.Random;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,7 +37,8 @@ public class participer_benevolat_Servlet extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int x=4;
+		Random rd = new Random();
+		double x=rd.nextDouble();
 		ParticipationB partb=new ParticipationB();
 		HttpSession session=request.getSession();
 		
